@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(name = "products-service")
+//@FeignClient(name = "products", url = "http://localhost:8080/")
 //@LoadBalancerClient(value = "products-service", configuration = LoadBalancerConfiguration.class)
 
 public interface FeigProductRepository {
